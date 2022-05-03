@@ -1,0 +1,12 @@
+:root {
+  --c-bg: #fff;
+}
+
+html {
+  background-color: var(--c-bg);
+  font-family: 'Sora', sans-serif;
+}
+
+html.dark {
+  --c-bg: #212121;
+}
