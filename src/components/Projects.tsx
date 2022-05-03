@@ -4,7 +4,7 @@ import ProjectItem from './ProjectItem'
 export default () => {
   const projectLists = [
     {
-      name: 'ghost-theme-Moegi',
+      name: 'Ghost theme Moegi',
       desc: 'An elegant & fresh ghost theme',
       link: 'https://github.com/moegi-design/ghost-theme-Moegi',
       icon: 'i-twemoji-newspaper',
@@ -19,20 +19,36 @@ export default () => {
       link: 'https://ljl.li/oreooo',
       icon: 'i-twemoji-cookie',
     }, {
+      name: 'Tin',
+      desc: 'Mathematical arts driven by t, i and anything',
+      link: 'https://tin.ddiu.me/',
+      icon: 'i-twemoji-eight-spoked-asterisk',
+    }, {
       name: 'placeholder-image',
       desc: 'Generate placeholder images by simply adding params',
       link: 'https://ph.ljl.li/',
       icon: 'i-twemoji-ice',
     }, {
-      name: 'Tin',
-      desc: 'Mathematical arts driven by t, i and anything',
-      link: 'https://tin.ddiu.me/',
-      icon: 'i-twemoji-eight-spoked-asterisk',
+      name: 'Diu\'s Online Riddle',
+      desc: 'An online puzzle game',
+      link: 'https://riddle.ddiu.me/',
+      icon: 'i-twemoji-exploding-head',
     },
   ]
+  const openLink = () => {
+    window.open('https://github.com/ddiu8081', '_blank')
+  }
   return (
     <>
-      <h2>Projects</h2>
+      <h2 class="flex items-center">
+        <span flex-1>Projects</span>
+        <div
+          onClick={openLink}
+          class="op-50 ml-2 hover:op-100 transition-opacity cursor-pointer" 
+        >
+          <div class="m-2 i-ri-arrow-right-up-line" ></div>
+        </div>
+      </h2>
       <div class="grid gap-4 grid-cols-1 sm:grid-cols-2">
         <Index each={projectLists}>
           {item => (

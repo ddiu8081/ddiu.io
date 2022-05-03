@@ -1,6 +1,6 @@
 import { Index, Show } from 'solid-js'
 
-interface SocialsProps {
+interface SocialProps {
   data: {
     icon: string
     link: string
@@ -8,7 +8,7 @@ interface SocialsProps {
   }
 }
 
-const SocialItem = (props: SocialsProps) => {
+const SocialItem = (props: SocialProps) => {
   const { data } = props
   return (
     <a

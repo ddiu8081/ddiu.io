@@ -17,7 +17,7 @@ export default (props: Props) => {
     >
       <div class="flex h-full items-center justify-center">
         <div flex-1>
-          <div>{data.name}</div>
+          <div font-semibold>{data.name}</div>
           <div op-50 font-normal text-sm>{data.desc}</div>
         </div>
         <div ml-4 text-4xl op-75>
