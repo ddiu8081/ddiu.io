@@ -50,7 +50,11 @@ export default () => {
       text: '',
       link: 'https://space.bilibili.com/541993',
       icon: 'i-ri-bilibili-fill',
-    },
+    }, {
+      text: '',
+      link: 'https://twitter.com/ddiu8081',
+      icon: 'i-ri-twitter-fill',
+    }
   ]
 
   return (
