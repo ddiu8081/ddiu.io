@@ -16,7 +16,7 @@ const PostItem = (props: PostProps) => {
       target="_blank"
     >
       <div flex-1>{ data.title }</div>
-      <div op-40 class="hidden sm:block">{ dayjs(data.published_at).format('YYYY-MM-DD') }</div>
+      <div op-40 font-normal class="hidden sm:block">{ dayjs(data.published_at).format('YYYY-MM-DD') }</div>
     </a>
   )
 }

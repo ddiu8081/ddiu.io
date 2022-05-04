@@ -7,7 +7,7 @@ import Footer from './components/Footer'
 
 const App: Component = () => {
   return (
-    <main class="max-w-[65ch] px-6 py-[8vh] mx-auto prose prose-truegray xl:text-lg dark:prose-invert">
+    <main class="px-6 py-[8vh] max-w-[76ch] mx-auto prose prose-truegray xl:text-lg dark:prose-invert">
       <Hero />
       <Projects />
       <Posts />
