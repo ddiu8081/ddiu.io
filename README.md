@@ -2,7 +2,9 @@
 
 ## Credits
 
-Font is [Sora](https://fonts.google.com/specimen/Sora) under [Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL).
+Font is [IBM Plex Sans](https://fonts.google.com/specimen/IBM+Plex+Sans) under [Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL).
+
+Icons are from [Remix Icon](https://github.com/Remix-Design/RemixIcon) and [Twemoji](https://twemoji.twitter.com/).
 
 Source Codes are under [MIT license](https://github.com/ddiu8081/ddiu.me/blob/main/LICENSE).
 
