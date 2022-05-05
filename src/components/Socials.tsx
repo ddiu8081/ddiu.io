@@ -66,6 +66,11 @@ export default () => {
       link: 'https://twitter.com/ddiu8081',
       icon: 'i-ri-twitter-fill',
       class: 'hover:bg-[#00ACEE]'
+    }, {
+      text: '',
+      link: 'https://weibo.com/u/1767697883',
+      icon: 'i-ri-weibo-fill',
+      class: 'hover:bg-[#ff8200]'
     }
   ]
 
