@@ -53,19 +53,14 @@ export default () => {
       class: 'hover:bg-[#ea4c89] dark:hover:bg-[#ea4c89]'
     }, {
       text: '',
-      link: 'https://www.behance.net/ddiu8081',
-      icon: 'i-ri-behance-fill',
-      class: 'hover:bg-[#1769ff]'
+      link: 'https://twitter.com/ddiu8081',
+      icon: 'i-ri-twitter-fill',
+      class: 'hover:bg-[#00ACEE]'
     }, {
       text: '',
       link: 'https://space.bilibili.com/541993',
       icon: 'i-ri-bilibili-fill',
       class: 'hover:bg-[#fb7299]'
-    }, {
-      text: '',
-      link: 'https://twitter.com/ddiu8081',
-      icon: 'i-ri-twitter-fill',
-      class: 'hover:bg-[#00ACEE]'
     }, {
       text: '',
       link: 'https://weibo.com/u/1767697883',
