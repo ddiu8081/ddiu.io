@@ -1,4 +1,4 @@
-[ddiu.me](https://ddiu.me)
+[ddiu.io](https://ddiu.io)
 
 ## Credits
 
