@@ -29,7 +29,7 @@ export default () => {
   return (
     <>
       <h2 class="flex items-center">
-        <span flex-1>Latest Posts</span>
+        <span flex-1 class="outfit">Latest Posts</span>
         <div
           onClick={openLink}
           class="op-50 ml-2 hover:op-100 transition-opacity cursor-pointer" 
