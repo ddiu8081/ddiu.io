@@ -18,7 +18,7 @@ export default () => {
           <span>Currently working at DiDi.</span>
         </div>
         <div mt-2>
-          <span>I Like making interesting projects.</span>
+          <span>I like making interesting projects.</span>
         </div>
       </div>
       <Socials />
