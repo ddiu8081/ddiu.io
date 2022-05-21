@@ -1,5 +1,5 @@
 import Socials from './Socials'
-import helloWordArr from '~/lib/hello'
+import helloWordArr from '../lib/hello'
 
 export default () => {
   const helloWord = helloWordArr[Math.floor((Math.random() * helloWordArr.length))]

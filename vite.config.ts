@@ -1,6 +1,6 @@
-import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import solidPlugin from 'vite-plugin-solid'
+import ssr from 'vite-plugin-ssr/plugin'
 import Unocss from 'unocss/vite'
 
 import { presetAttributify, presetUno } from 'unocss'
@@ -8,13 +8,10 @@ import presetIcons from '@unocss/preset-icons'
 import { presetTypography } from '@unocss/preset-typography'
 
 export default defineConfig({
-  resolve: {
-    alias: [
-      { find: '~/', replacement: `${resolve(__dirname, 'src')}/` },
-    ],
-  },
   plugins: [
-    solidPlugin(),
+    solidPlugin({
+      ssr: true,
+    }),
     Unocss({
       presets: [
         presetIcons(),
@@ -28,6 +25,9 @@ export default defineConfig({
           },
         }),
       ],
+    }),
+    ssr({
+      prerender: true,
     }),
   ],
   build: {

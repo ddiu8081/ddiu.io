@@ -1,7 +1,7 @@
 import { createResource, Index } from 'solid-js'
 import dayjs from 'dayjs'
-import { getLatestPosts } from '~/lib/api'
-import type { PostMeta } from '~/lib/api'
+import { getLatestPosts } from '../lib/api'
+import type { PostMeta } from '../lib/api'
 
 interface PostProps {
   data: PostMeta
