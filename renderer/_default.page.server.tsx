@@ -29,6 +29,12 @@ const render = (pageContext: PageContext) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>${title}</title>
         ${dangerouslySkipEscape(generateHydrationScript())}
+        <script> 
+          (function() {
+            const darkSchema = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+            document.documentElement.classList.toggle('dark', darkSchema)
+          })()
+        </script>
       </head>
       <body>
         <div id="root">${dangerouslySkipEscape(pageHtml)}</div>

@@ -1,7 +1,7 @@
 import { createResource, Index } from 'solid-js'
 import dayjs from 'dayjs'
-import { getLatestPosts } from '../lib/api'
-import type { PostMeta } from '../lib/api'
+import { getLatestPosts } from '../api'
+import type { PostMeta } from '../api'
 
 interface PostProps {
   data: PostMeta
@@ -28,7 +28,7 @@ export default () => {
   }
   return (
     <>
-      <h2 class="flex items-center">
+      <h2 class="flex items-center mt-14 mb-4 font-semibold text-3xl">
         <span flex-1 class="outfit">Latest Posts</span>
         <div
           onClick={openLink}

@@ -1,13 +1,13 @@
 import Socials from './Socials'
-import helloWordArr from '../lib/hello'
+// import helloWordArr from '../hello'
 
 export default () => {
-  const helloWord = helloWordArr[Math.floor((Math.random() * helloWordArr.length))]
+  // const helloWord = helloWordArr[Math.floor((Math.random() * helloWordArr.length))]
   
   return (
     <header mt-18 class="outfit">
-      <h1>
-        <span class="block">{helloWord}, </span>
+      <h1 text-6xl font-bold class="not-prose">
+        <span class="block">Hello, </span>
         <span class="block mt-2">I'm Diu.</span>
       </h1>
       <div mt-6>

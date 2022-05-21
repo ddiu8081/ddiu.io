@@ -9,22 +9,20 @@ import '../assets/font.css'
 
 let dispose: () => void
 
+const listenColorSchema = () => {
+  const colorSchema = window.matchMedia('(prefers-color-scheme: dark)')
+  colorSchema.addEventListener('change', () => {
+    document.documentElement.classList.toggle('dark', colorSchema.matches)
+  })
+}
+
 const render = async (pageContext: PageContextBuiltInClient & PageContext) => {
   const content = document.getElementById('root')
   const { Page, pageProps } = pageContext
 
-  const colorSchema = window.matchMedia('(prefers-color-scheme: dark)')
-  const performDark = () => {
-    if (colorSchema.matches) {
-      document.documentElement.classList.add('dark')
-    } else {
-      document.documentElement.classList.remove('dark')
-    }
-  }
-  colorSchema.addEventListener('change', performDark)
-  performDark()
-
   if (dispose) dispose()
+
+  listenColorSchema()
 
   if (pageContext.isHydration) {
     dispose = hydrate(

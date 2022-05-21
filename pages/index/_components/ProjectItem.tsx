@@ -20,7 +20,7 @@ export default (props: Props) => {
           <div font-medium leading-relaxed>{data.name}</div>
           <div op-50 font-normal text-sm>{data.desc}</div>
         </div>
-        <div ml-4 text-4xl op-75>
+        <div ml-4 text-4xl op-80>
           <div class={data.icon} />
         </div>
       </div>
