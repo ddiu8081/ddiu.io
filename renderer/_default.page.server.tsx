@@ -25,8 +25,8 @@ const render = (pageContext: PageContext) => {
         <meta property="og:description" content="${description}" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:creator" content="@ddiu8081" />
-        <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" />
         <title>${title}</title>
         ${dangerouslySkipEscape(generateHydrationScript())}
         <script> 
