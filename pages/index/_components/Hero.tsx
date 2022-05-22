@@ -6,11 +6,11 @@ export default () => {
   
   return (
     <header class="outfit mt-12 md:mt-18">
-      <h1 class="text-5xl font-bold md:text-6xl">
+      <h1 class="text-5xl font-bold">
         <span class="block">Hello, </span>
         <span class="block mt-2">I'm Diu.</span>
       </h1>
-      <div class="mt-6 text-base md:text-xl">
+      <div class="mt-6">
         <div>
           <span>Front-end & iOS developer / Amateur designer.</span>
         </div>
