@@ -26,6 +26,7 @@ const render = (pageContext: PageContext) => {
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:creator" content="@ddiu8081" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href="https://ddiu.io/" />
         <link rel="icon" href="/favicon.ico" />
         <title>${title}</title>
         ${dangerouslySkipEscape(generateHydrationScript())}

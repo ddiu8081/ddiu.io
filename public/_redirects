@@ -1,6 +1,7 @@
 # Domain Redirects
 https://ljl.li/* https://ddiu.io/:splat 301!
 https://ddiu.me/* https://ddiu.io/:splat 301!
+https://ddiu.site/* https://ddiu.io/:splat 301!
 
 # Social Links
 /github https://github.com/ddiu8081
