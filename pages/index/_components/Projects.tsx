@@ -21,7 +21,7 @@ export default () => {
     }, {
       name: 'Tin',
       desc: 'Mathematical arts driven by t, i and anything',
-      link: 'https://tin.ddiu.me/',
+      link: 'https://tin.ddiu.io/',
       icon: 'i-twemoji-eight-spoked-asterisk',
     }, {
       name: 'placeholder-image',
