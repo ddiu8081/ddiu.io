@@ -10,10 +10,11 @@ https://ddiu.site/* https://ddiu.io/:splat 301!
 /playlist https://music.163.com/playlist?id=549605405
 
 # Projects
-/oreooo https://oreo.ddiu.me/
+/oreooo https://oreo.ddiu.io/
 /bus-vis https://bus.ddiu.me/
-/tin https://tin.ddiu.me/
+/tin https://tin.ddiu.io/
 /moegi https://moegi.design/
+/emoji https://emoji.ddiu.io/
 
 # Github Repo Jump
 /gh/* https://github.com/ddiu8081/:splat

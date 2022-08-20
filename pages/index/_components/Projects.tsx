@@ -16,13 +16,18 @@ export default () => {
     }, {
       name: 'oreooo',
       desc: 'An oreo generater',
-      link: 'https://ljl.li/oreooo',
+      link: 'https://oero.ddiu.io/',
       icon: 'i-twemoji-cookie',
     }, {
       name: 'Tin',
       desc: 'Mathematical arts driven by t, i and anything',
       link: 'https://tin.ddiu.io/',
       icon: 'i-twemoji-eight-spoked-asterisk',
+    }, {
+      name: 'Fluent emoji maker',
+      desc: 'Generate your own Fluent Emojis!',
+      link: 'https://emoji.ddiu.io/',
+      icon: 'i-twemoji-rolling-on-the-floor-laughing',
     }, {
       name: 'placeholder-image',
       desc: 'Generate placeholder images by simply adding params',
