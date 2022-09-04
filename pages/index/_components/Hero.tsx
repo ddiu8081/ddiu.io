@@ -12,7 +12,7 @@ export default () => {
       </h1>
       <div class="mt-6">
         <div>
-          <span>Front-end & iOS developer / Amateur designer.</span>
+          <span>Front-end developer / Amateur designer.</span>
         </div>
         <div mt-2>
           <span>Currently working at DiDi.</span>
