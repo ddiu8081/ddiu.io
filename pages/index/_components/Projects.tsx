@@ -16,7 +16,7 @@ export default () => {
     }, {
       name: 'oreooo',
       desc: 'An oreo generater',
-      link: 'https://oero.ddiu.io/',
+      link: 'https://oreo.ddiu.io/',
       icon: 'i-twemoji-cookie',
     }, {
       name: 'Tin',
