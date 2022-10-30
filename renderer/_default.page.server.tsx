@@ -30,12 +30,6 @@ const render = (pageContext: PageContext) => {
         <link rel="icon" href="/favicon.ico" />
         <title>${title}</title>
         ${dangerouslySkipEscape(generateHydrationScript())}
-        <script> 
-          (function() {
-            const darkSchema = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-            document.documentElement.classList.toggle('dark', darkSchema)
-          })()
-        </script>
       </head>
       <body>
         <div id="root">${dangerouslySkipEscape(pageHtml)}</div>
