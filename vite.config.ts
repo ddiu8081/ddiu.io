@@ -16,7 +16,9 @@ export default defineConfig({
       presets: [
         presetIcons(),
         presetAttributify(),
-        presetUno(),
+        presetUno({
+          dark: 'media'
+        }),
         presetTypography({
           cssExtend: {
             'a': {
