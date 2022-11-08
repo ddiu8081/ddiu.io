@@ -4,25 +4,35 @@ import ProjectItem from './ProjectItem'
 export default () => {
   const projectLists = [
     {
-      name: 'Ghost theme Moegi',
-      desc: 'An elegant & fresh ghost theme',
-      link: 'https://github.com/moegi-design/ghost-theme-Moegi',
-      icon: 'i-twemoji-newspaper',
+      name: 'Moegi Theme for VS Code',
+      desc: 'An elegant theme for VS Code.',
+      link: 'https://github.com/moegi-design/vscode-theme',
+      icon: 'i-twemoji-cherry-blossom',
+    }, {
+      name: 'bilicli',
+      desc: 'Bilibili-live danmu dashboard in your terminal.',
+      link: 'https://github.com/ddiu8081/bilicli',
+      icon: 'i-twemoji-control-knobs',
+    }, {
+      name: 'blive-message-listener',
+      desc: 'Bilibili-live danmu listener with type.',
+      link: 'https://github.com/ddiu8081/blive-message-listener',
+      icon: 'i-twemoji-keyboard',
     }, {
       name: 'bus-vis',
       desc: 'City bus visualizations of China',
       link: 'https://bus.ljl.li/',
       icon: 'i-twemoji-oncoming-bus',
     }, {
-      name: 'oreooo',
-      desc: 'An oreo generater',
-      link: 'https://oreo.ddiu.io/',
-      icon: 'i-twemoji-cookie',
-    }, {
       name: 'Tin',
       desc: 'Mathematical arts driven by t, i and anything',
       link: 'https://tin.ddiu.io/',
       icon: 'i-twemoji-eight-spoked-asterisk',
+    }, {
+      name: 'oreooo',
+      desc: 'An oreo generater',
+      link: 'https://oreo.ddiu.io/',
+      icon: 'i-twemoji-cookie',
     }, {
       name: 'Fluent emoji maker',
       desc: 'Generate your own Fluent Emojis!',
@@ -33,6 +43,11 @@ export default () => {
       desc: 'Generate placeholder images by simply adding params',
       link: 'https://ph.ljl.li/',
       icon: 'i-twemoji-ice',
+    }, {
+      name: 'Ghost theme Moegi',
+      desc: 'An elegant & fresh ghost theme',
+      link: 'https://github.com/moegi-design/ghost-theme-Moegi',
+      icon: 'i-twemoji-newspaper',
     }, {
       name: 'Diu\'s Online Riddle',
       desc: 'An online puzzle game',
