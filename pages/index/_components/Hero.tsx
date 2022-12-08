@@ -5,8 +5,8 @@ export default () => {
   // const helloWord = helloWordArr[Math.floor((Math.random() * helloWordArr.length))]
   
   return (
-    <header class="outfit mt-12 md:mt-18">
-      <h1 class="text-5xl font-bold">
+    <header class="mt-12 md:mt-18">
+      <h1 class="title text-5xl font-bold">
         <span class="block">Hello, </span>
         <span class="block mt-2">I'm Diu.</span>
       </h1>

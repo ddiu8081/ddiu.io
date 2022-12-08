@@ -19,8 +19,8 @@ html {
   }
 }
 
-.outfit {
-  font-family: 'Outfit', sans-serif;
+.title {
+  font-family: 'Hubot Sans', sans-serif;
 }
 
 ::-webkit-scrollbar {
