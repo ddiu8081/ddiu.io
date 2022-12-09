@@ -60,7 +60,7 @@ export default () => {
       text: '',
       link: 'https://figma.com/@ddiu8081',
       icon: 'i-fa-brands-figma',
-      class: 'hover:bg-[#ea4c89] dark:hover:bg-[#ea4c89]'
+      class: 'hover:bg-[#f7c104]'
     }, {
       text: '',
       link: 'https://dribbble.com/ddiu8081',
