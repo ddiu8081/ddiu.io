@@ -1,0 +1,20 @@
+---
+import Layout from './Layout.astro'
+
+const { frontmatter } = Astro.props
+---
+
+<Layout title="Posts">
+  <!-- <h1 class="mb-8">{frontmatter.title}</h1> -->
+  <header class="mb-12 flex flex-col gap-2">
+    <h1 class="text-xl fg-emphasis">
+      {frontmatter.title}
+    </h1>
+    <p class="text-sm op-60">
+      <time>{frontmatter.date}</time>
+    </p>
+  </header>
+  <article class="prose max-w-none prose-neutral prose-invert">
+    <slot />
+  </article>
+</Layout>

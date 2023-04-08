@@ -3,9 +3,11 @@ lockfileVersion: 5.4
 specifiers:
   '@fontsource/newsreader': ^4.5.10
   '@fontsource/space-grotesk': ^4.5.13
+  '@unocss/preset-typography': ^0.50.8
   '@unocss/preset-web-fonts': ^0.50.8
   '@unocss/reset': ^0.50.8
   astro: ^2.2.1
+  date-fns: ^2.29.3
   unocss: ^0.50.8
 
 dependencies:
@@ -13,8 +15,10 @@ dependencies:
   '@fontsource/space-grotesk': 4.5.13
   '@unocss/reset': 0.50.8
   astro: 2.2.1
+  date-fns: 2.29.3
 
 devDependencies:
+  '@unocss/preset-typography': 0.50.8
   '@unocss/preset-web-fonts': 0.50.8
   unocss: 0.50.8
 
@@ -1292,6 +1296,11 @@ packages:
       mdn-data: 2.0.30
       source-map-js: 1.0.2
     dev: true
+
+  /date-fns/2.29.3:
+    resolution: {integrity: sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==}
+    engines: {node: '>=0.11'}
+    dev: false
 
   /debug/4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}

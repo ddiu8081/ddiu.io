@@ -1,0 +1,27 @@
+---
+import { format } from 'date-fns'
+import { getCollection, getEntryBySlug } from 'astro:content'
+import Layout from '@/layouts/Layout.astro'
+import PageHeader from '@/components/PageHeader.astro'
+
+const allPosts = await getCollection('posts')
+---
+
+<Layout title="Posts">
+  <PageHeader title="Posts" />
+  <div>
+    {allPosts.map((post) => (
+      <a
+        href={`/posts/${post.slug}`}
+        class:list={[
+          'flex items-center justify-between py-3',
+          'border-t border-base',
+          'transition-colors fg-base hover:fg-emphasis',
+        ]}
+      >
+        <p>{post.data.title}</p>
+        <span>{format(post.data.date, 'MM-dd')}</span>
+      </a>
+    ))}
+  </div>
+</Layout>

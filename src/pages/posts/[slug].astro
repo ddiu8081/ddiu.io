@@ -1,0 +1,29 @@
+---
+import { format } from 'date-fns'
+import { getCollection } from 'astro:content'
+import Layout from '@/layouts/Layout.astro'
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection('posts')
+  return blogEntries.map(entry => ({
+    params: { slug: entry.slug }, props: { entry },
+  }))
+}
+
+const { entry } = Astro.props
+const { Content } = await entry.render()
+---
+
+<Layout title="Diu">
+  <header class="mb-12 flex flex-col gap-2">
+    <h1 class="text-lg fg-emphasis">
+      {entry.data.title}
+    </h1>
+    <p class="text-sm op-60">
+      <time>{format(entry.data.date, 'yyyy-MM-dd')}</time>
+    </p>
+  </header>
+  <article class="prose max-w-none prose-neutral dark:prose-invert">
+    <Content />
+  </article>
+</Layout>
