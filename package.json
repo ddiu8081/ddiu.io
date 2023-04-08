@@ -10,6 +10,13 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource/newsreader": "^4.5.10",
+    "@fontsource/space-grotesk": "^4.5.13",
+    "@unocss/reset": "^0.50.8",
     "astro": "^2.2.1"
+  },
+  "devDependencies": {
+    "@unocss/preset-web-fonts": "^0.50.8",
+    "unocss": "^0.50.8"
   }
 }
