@@ -1,6 +1,7 @@
 ---
 import { format } from 'date-fns'
 import { getCollection } from 'astro:content'
+import PageHeader from '@/components/PageHeader.astro'
 import Layout from '@/layouts/Layout.astro'
 
 export async function getStaticPaths() {
@@ -15,6 +16,7 @@ const { Content } = await entry.render()
 ---
 
 <Layout title="Diu">
+  <PageHeader title="Posts" />
   <header class="mb-12 flex flex-col gap-2">
     <h1 class="text-lg fg-emphasis">
       {entry.data.title}

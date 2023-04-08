@@ -6,8 +6,13 @@ interface Props {
 const props = Astro.props
 ---
 
-<header class="mb-6">
-  <h1 class="text-4xl font-serif fg-emphasis">
+<header class="mb-6 flex items-center gap-1 font-serif">
+  <a
+    href="/"
+    class="transition-colors fg-base hover:fg-emphasis"
+  >Diu</a>
+  <div class="i-carbon-caret-right" />
+  <h1 class="text-lg fg-emphasis">
     <div>{props.title}</div>
   </h1>
 </header>

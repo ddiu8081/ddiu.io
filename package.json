@@ -17,6 +17,8 @@
     "date-fns": "^2.29.3"
   },
   "devDependencies": {
+    "@iconify-json/carbon": "^1.1.16",
+    "@unocss/preset-icons": "^0.50.8",
     "@unocss/preset-typography": "^0.50.8",
     "@unocss/preset-web-fonts": "^0.50.8",
     "unocss": "^0.50.8"

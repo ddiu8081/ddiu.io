@@ -3,6 +3,7 @@ import {
   presetUno,
   presetWebFonts,
   presetTypography,
+  presetIcons,
 } from 'unocss'
 
 export default defineConfig({
@@ -35,12 +36,13 @@ export default defineConfig({
         },
       },
     }),
+    presetIcons(),
   ],
   shortcuts: [{
     'bg-base': 'bg-light-100 dark:bg-dark-800',
     'fg-base': 'text-neutral-500 dark:text-neutral-400',
     'fg-emphasis': 'text-dark dark:text-light',
-    'border-base': 'border-light-800 dark:border-dark-100',
+    'border-base': 'border-light-700 dark:border-dark-300',
     'text-emphasis': 'font-serif font-italic text-lg fg-emphasis', 
   }],
 })
