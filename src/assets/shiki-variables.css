@@ -1,0 +1,29 @@
+:root {
+  --astro-code-color-text: #333333;
+  --astro-code-color-background: #f4f4f4;
+  --astro-code-token-constant: #c7792b;
+  --astro-code-token-string: #377961;
+  --astro-code-token-comment: #ffffff4f;
+  --astro-code-token-keyword: #c05386;
+  --astro-code-token-parameter: #6b588e;
+  --astro-code-token-function: #668f9a;
+  --astro-code-token-string-expression: #6b588e;
+  --astro-code-token-punctuation: #0000005f;
+  --astro-code-token-link: #a0a0a0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --astro-code-color-text: #dddddd;
+    --astro-code-color-background: #222222;
+    --astro-code-token-constant: #f6c177;
+    --astro-code-token-string: #74ccaa;
+    --astro-code-token-comment: #ffffff4f;
+    --astro-code-token-keyword: #ed9cc2;
+    --astro-code-token-parameter: #a0a5d6;
+    --astro-code-token-function: #5fb5be;
+    --astro-code-token-string-expression: #a0a5d6;
+    --astro-code-token-punctuation: #ffffff5f;
+    --astro-code-token-link: #808080;
+  }
+}

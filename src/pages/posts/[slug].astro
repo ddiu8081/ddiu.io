@@ -3,6 +3,7 @@ import { format } from 'date-fns'
 import { getCollection } from 'astro:content'
 import PageHeader from '@/components/PageHeader.astro'
 import Layout from '@/layouts/Layout.astro'
+import '@/assets/shiki-variables.css'
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection('posts')
@@ -21,11 +22,11 @@ const { Content } = await entry.render()
     <h1 class="text-lg fg-emphasis">
       {entry.data.title}
     </h1>
-    <p class="text-sm op-60">
+    {entry.data.date && <p class="text-sm op-50">
       <time>{format(entry.data.date, 'yyyy-MM-dd')}</time>
-    </p>
+    </p>}
   </header>
-  <article class="prose max-w-none prose-neutral dark:prose-invert">
+  <article class="prose max-w-none prose-neutral dark:prose-invert fg-base">
     <Content />
   </article>
 </Layout>

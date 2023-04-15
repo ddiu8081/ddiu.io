@@ -51,7 +51,7 @@ Moegi Theme 的底色确定为无彩色偏向的灰色调，而其中会有若�
 
 UI 界面部分颜色的设定方式是标准的 K-V 对应关系，每一处颜色都有一个与之对应的颜色 key，只要在主题文件中指定 key 对应的色值即可。
 
-```javascript
+```json
 {
 	"colors": {
 		// Base Colors
@@ -69,7 +69,7 @@ VS Code 给出了完整的文档 [Theme Color](https://code.visualstudio.com/api
 
 至于代码高亮部分，其设定方式类似 CSS，是一种对批量作用域设定颜色的方式。代码的每一组成部分都具有多个 scope。scope 具有优先级的概念，如果对多个 scope 都指定了颜色，优先级更高的会作为最终颜色。
 
-```javascript
+```json
 {
 	"scope": [
 		"constant",

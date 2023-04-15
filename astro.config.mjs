@@ -5,5 +5,10 @@ import UnoCSS from 'unocss/astro'
 export default defineConfig({
   integrations: [
     UnoCSS(),
-  ]
+  ],
+  markdown: {
+    shikiConfig: {
+      theme: 'css-variables',
+    }
+  }
 })

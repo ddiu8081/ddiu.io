@@ -63,7 +63,7 @@ simplify_loc_list = vw.simplify(new_loc_list, ratio=0.2)
 
 共有1373个字符，它们以 `经度1,纬度1;经度2,纬度2…` 的格式排列。鉴于所有经度/纬度之间的相差并不大，且每个点都是上一点的延伸，于是可以想到把“零散点”变成“继承点”的方式。采用相邻求差值的方式计算每一个经度/纬度与上一组值的差值，并将所有结果乘10^6以尽量减少小数的出现：
 
-```other
+```python
 def compress_polyline(raw_polyline):
     loc_text_list = raw_polyline.split(';')
     last_blng = 0
