@@ -43,6 +43,7 @@ export default defineConfig({
     'fg-base': 'text-neutral-500 dark:text-neutral-300',
     'fg-emphasis': 'text-dark dark:text-light',
     'border-base': 'border-light-700 dark:border-dark-300',
-    'text-emphasis': 'font-serif font-italic text-lg fg-emphasis', 
+    'text-emphasis': 'font-serif font-italic text-lg fg-emphasis',
+    'border-emphasis': 'border-neutral-400 dark:border-light',
   }],
 })
