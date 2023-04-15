@@ -1,7 +1,31 @@
+---
+const tabs = [
+  {
+    name: 'Projects',
+    link: '/projects',
+  },
+  {
+    name: 'Posts',
+    link: '/posts',
+  },
+]
+---
+
 <div class="my-8">
-  <div class="flex gap-4 border-b border-base">
-    <a href="/projects" class="my-2">Projects</a>
-    <a href="/posts" class="my-2">Posts</a>
+  <div class="flex flex-col">
+    {tabs.map(item => (
+      <a
+        href={item.link}
+        class:list={[
+          'flex items-center justify-between py-3',
+          'border-t border-base last:border-b',
+          'hv-base',
+        ]}
+      >
+        <p>{item.name}</p>
+        <div class="i-carbon-arrow-up-right" />
+      </a>
+    ))}
   </div>
 </div>
 
