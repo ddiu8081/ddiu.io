@@ -4,6 +4,7 @@ interface SocialProps {
   link: string
   class: string
   text?: string
+  slots?: string
 }
 
 const socialLinks: SocialProps[] = [
@@ -35,7 +36,8 @@ const socialLinks: SocialProps[] = [
     text: '',
     link: 'https://space.bilibili.com/541993',
     icon: 'i-ri:bilibili-line',
-    class: 'hover:border-[#fb7299] hover:text-[#fb7299]'
+    class: 'hover:border-[#fb7299] hover:text-[#fb7299]',
+    slots: 'bili-state',
   },
 ]
 

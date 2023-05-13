@@ -1,0 +1,11 @@
+[build.environment]
+  NETLIFY_USE_PNPM = "true"
+
+[build]
+  command = "OUTPUT=netlify astro build"
+  publish = "dist"
+
+[[headers]]
+  for = "/manifest.webmanifest"
+  [headers.values]
+    Content-Type = "application/manifest+json"

@@ -10,6 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/netlify": "^2.2.2",
     "@fontsource/newsreader": "^4.5.10",
     "@fontsource/space-grotesk": "^4.5.13",
     "@unocss/reset": "^0.50.8",
