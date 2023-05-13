@@ -39,7 +39,7 @@ export default defineConfig({
     presetIcons(),
   ],
   shortcuts: [{
-    'bg-base': 'bg-light-100 dark:bg-dark-800',
+    'bg-base': 'bg-light-100 dark:bg-dark-900',
     'fg-base': 'text-neutral-500 dark:text-neutral-300',
     'fg-emphasis': 'text-dark dark:text-light',
     'hv-base': 'transition-colors duration-300 hover:fg-emphasis',

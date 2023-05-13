@@ -7,7 +7,7 @@ import { projectList } from '@/content/meta'
 <Layout title="Posts">
   <PageHeader title="Projects" />
   <div class="mt-4 -mx-1 grid gap-x-4 gap-y-6 grid-cols-2 md:grid-cols-3">
-    {projectList.map((project) => (
+    {projectList.map((project, index) => (
       <div class="flex flex-col gap-2">
         <a
           class:list={[
@@ -15,10 +15,13 @@ import { projectList } from '@/content/meta'
             'border border-base hover:border-emphasis',
             'bg-light-300 hover:bg-light-500 dark:bg-dark dark:hover:bg-dark-200',
             'grayscale hover:filter-none',
-            'transition-property-[filter,border-color] duration-300',
+            'transition-property-[filter,border-color] duration-300 animate-enter',
           ]}
           href={project.link}
           target="_blank"
+          style={{
+            animationDelay: `${index * 0.2}s`,
+          }}
         >
           <img src={project.image}>
         </a> 
@@ -30,3 +33,20 @@ import { projectList } from '@/content/meta'
     ))}
   </div>
 </Layout>
+
+<style>
+  .animate-enter {
+    animation: animate-enter 0.5s ease-out;
+  }
+
+  @keyframes animate-enter {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

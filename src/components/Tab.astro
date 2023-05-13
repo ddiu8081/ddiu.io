@@ -13,14 +13,18 @@ const tabs = [
 
 <div class="my-8">
   <div class="flex flex-col">
-    {tabs.map(item => (
+    {tabs.map((item, index) => (
       <a
         href={item.link}
         class:list={[
           'flex items-center justify-between py-3',
           'border-t border-base last:border-b',
           'hv-base',
+          'animate-enter'
         ]}
+        style={{
+          animationDelay: `${index * 0.2}s`,
+        }}
       >
         <p>{item.name}</p>
         <div class="i-carbon-arrow-up-right" />
@@ -29,3 +33,19 @@ const tabs = [
   </div>
 </div>
 
+<style>
+  .animate-enter {
+    animation: animate-enter 0.5s ease-out;
+  }
+
+  @keyframes animate-enter {
+    0% {
+      opacity: 0;
+      transform: translateX(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+</style>
