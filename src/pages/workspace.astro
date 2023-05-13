@@ -1,0 +1,25 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import PageHeader from '@/components/PageHeader.astro'
+import data from '@/content/workspaces'
+---
+
+<Layout title="Posts">
+  <PageHeader title="Workspace" />
+  <div class="mt-4">
+    {Object.keys(data).map(name => (
+      <div class="flex flex-col gap-6 my-6 py-4 border-t border-base">
+        <h2 class="font-semibold">{name}</h2>
+        {data[name].map((item, index) => (
+          <div class="flex items-center gap-4">
+            <img src={item.icon} alt="icon" class="w-14" />
+            <div class="flex-1">
+              <h2 class="font-semibold text-sm">{item.name}</h2>
+              <p class="op-50 text-sm">{item.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    ))}
+  </div>
+</Layout>

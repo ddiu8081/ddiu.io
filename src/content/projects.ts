@@ -1,5 +1,5 @@
 // @unocss-include
-export const projectList = [
+export default [
   {
     name: 'Moegi Theme for VS Code',
     desc: 'An elegant theme for VS Code.',
