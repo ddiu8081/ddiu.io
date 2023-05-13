@@ -37,7 +37,7 @@ const socialLinks: SocialProps[] = [
     link: 'https://space.bilibili.com/541993',
     icon: 'i-ri:bilibili-line',
     class: 'hover:border-[#fb7299] hover:text-[#fb7299]',
-    slots: 'bili-state',
+    // slots: 'bili-state',
   },
 ]
 
