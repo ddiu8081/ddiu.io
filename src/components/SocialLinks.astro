@@ -1,0 +1,22 @@
+---
+import data from '@/content/socials'
+---
+
+<div class="mt-2">
+  {data.map(item => (
+    <a
+      class:list={[
+        'inline-flex items-center gap-1',
+        'px-3 py-2 mt-2 mr-2 text-sm',
+        'border border-base rounded-md',
+        'transition-colors decoration-none',
+        item.class,
+      ]}
+      href={item.link}
+      target="_blank"
+    >
+      <div class={`text-xl ${item.icon}`} />
+      {item.text && <div text-sm ml-1>{ item.text }</div>}
+    </a>
+  ))}
+</div>

@@ -2,9 +2,13 @@
 import Layout from '@/layouts/Layout.astro'
 import Hero from '@/components/Hero.astro'
 import Tab from '@/components/Tab.astro'
+import SocialLinks from '@/components/SocialLinks.astro'
 ---
 
 <Layout title="Diu">
-	<Hero />
+	<header class="pb-16">
+		<Hero />
+		<SocialLinks />
+	</header>
 	<Tab />
 </Layout>
