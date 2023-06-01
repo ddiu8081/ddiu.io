@@ -4,6 +4,16 @@ import ProjectItem from './ProjectItem'
 export default () => {
   const projectLists = [
     {
+      name: 'anse',
+      desc: 'Get answers from AI elegantly.',
+      link: 'https://github.com/anse-app/anse',
+      icon: 'i-fluent-emoji-flat-full-moon',
+    }, {
+      name: 'chatgpt-demo',
+      desc: 'Minimal web UI for ChatGPT.',
+      link: 'https://github.com/anse-app/chatgpt-demo',
+      icon: 'i-fluent-emoji-flat-robot',
+    }, {
       name: 'Moegi Theme for VS Code',
       desc: 'An elegant theme for VS Code.',
       link: 'https://github.com/moegi-design/vscode-theme',
