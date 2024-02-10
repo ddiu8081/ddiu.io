@@ -15,7 +15,7 @@ import list from '@/content/projects'
             'border border-base hover:border-emphasis',
             'bg-light-300 hover:bg-light-500 dark:bg-dark dark:hover:bg-dark-200',
             'grayscale hover:filter-none',
-            'transition-property-[filter,border-color] duration-300 animate-enter',
+            'transition-property-[filter,border-color] duration-300',
           ]}
           href={project.link}
           target="_blank"
@@ -33,20 +33,3 @@ import list from '@/content/projects'
     ))}
   </div>
 </Layout>
-
-<style>
-  .animate-enter {
-    animation: animate-enter 0.5s ease-out;
-  }
-
-  @keyframes animate-enter {
-    0% {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-</style>

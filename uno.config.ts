@@ -16,20 +16,20 @@ export default defineConfig({
       fonts: {
         serif: 'Newsreader',
         grotesk: 'Space Grotesk',
-      }
+      },
     }),
     presetTypography({
       cssExtend: {
-        'h1': {
+        h1: {
           'font-size': '1.6em',
         },
-        'h2': {
+        h2: {
           'font-size': '1.4em',
-          'margin': '1.4em 0 0.5em',
+          margin: '1.4em 0 0.5em',
         },
-        'h3': {
+        h3: {
           'font-size': '1.25em',
-          'margin': '1.2em 0 0.5em',
+          margin: '1.2em 0 0.5em',
         },
         'h5, h6': {
           margin: '1em 0 0.5em',
@@ -38,13 +38,15 @@ export default defineConfig({
     }),
     presetIcons(),
   ],
-  shortcuts: [{
-    'bg-base': 'bg-light-100 dark:bg-dark-900',
-    'fg-base': 'text-neutral-500 dark:text-neutral-300',
-    'fg-emphasis': 'text-dark dark:text-light',
-    'hv-base': 'transition-colors duration-300 hover:fg-emphasis',
-    'border-base': 'border-light-700 dark:border-dark-300',
-    'text-emphasis': 'font-serif font-italic text-lg fg-emphasis',
-    'border-emphasis': 'border-neutral-400 dark:border-light',
-  }],
+  shortcuts: [
+    {
+      'bg-base': 'bg-light-100 dark:bg-dark-900',
+      'fg-base': 'text-neutral-600 dark:text-neutral-300',
+      'fg-emphasis': 'text-dark dark:text-light',
+      'hv-base': 'transition-colors duration-300 hover:fg-emphasis',
+      'border-base': 'border-light-700 dark:border-dark-300',
+      'text-emphasis': 'font-serif font-italic text-lg fg-emphasis',
+      'border-emphasis': 'border-neutral-400 dark:border-light',
+    },
+  ],
 })

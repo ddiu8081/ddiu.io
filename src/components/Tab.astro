@@ -24,7 +24,6 @@ const tabs = [
           'flex items-center justify-between py-3',
           'border-t border-base last:border-b',
           'hv-base',
-          'animate-enter'
         ]}
         style={{
           animationDelay: `${index * 0.2}s`,
@@ -36,20 +35,3 @@ const tabs = [
     ))}
   </div>
 </div>
-
-<style>
-  .animate-enter {
-    animation: animate-enter 0.5s ease-out;
-  }
-
-  @keyframes animate-enter {
-    0% {
-      opacity: 0;
-      transform: translateX(10px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-</style>

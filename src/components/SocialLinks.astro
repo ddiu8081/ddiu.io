@@ -1,6 +1,5 @@
 ---
 import data from '@/content/socials'
-import BiliState from '@/components/BiliState.astro'
 ---
 
 <div class="mt-2">
@@ -13,12 +12,13 @@ import BiliState from '@/components/BiliState.astro'
         'transition-colors decoration-none',
         item.class,
       ]}
+      title={item.link}
+      aria-label={item.link}
       href={item.link}
       target="_blank"
     >
       <div class={`text-xl ${item.icon}`} />
-      {item.text && <div text-sm ml-1>{ item.text }</div>}
-      {item.slots === 'bili-state' && <BiliState />}
+      {item.showTitle && <div text-sm ml-1>{ item.title }</div>}
     </a>
   ))}
 </div>
