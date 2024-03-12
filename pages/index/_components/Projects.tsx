@@ -4,6 +4,16 @@ import ProjectItem from './ProjectItem'
 export default () => {
   const projectLists = [
     {
+      name: 'MayScreen',
+      desc: 'Lyric teleprompter & remote control.',
+      link: 'https://screen.mayday.blue',
+      icon: 'i-fluent-emoji-flat-film-projector',
+    }, {
+      name: 'Mayday Blue',
+      desc: 'Mayday lyrics collection webapp.',
+      link: 'https://mayday.blue',
+      icon: 'i-fluent-emoji-flat-musical-score',
+    }, {
       name: 'anse',
       desc: 'Get answers from AI elegantly.',
       link: 'https://github.com/anse-app/anse',
