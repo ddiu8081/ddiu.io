@@ -4,6 +4,21 @@ import ProjectItem from './ProjectItem'
 export default () => {
   const projectLists = [
     {
+      name: 'Replay 5525',
+      desc: 'Replay of Mayday #5525 live tour.',
+      link: 'https://5525.mayday.land',
+      icon: 'i-fluent-emoji-flat:antenna-bars',
+    }, {
+      name: 'Mayday Re.Poem',
+      desc: 'Found poems from Mayday & you.',
+      link: 'http://poem.mayday.land/',
+      icon: 'i-fluent-emoji-flat:scissors',
+    }, {
+      name: 'MaydayLand',
+      desc: '「Toulou」online chatroom.',
+      link: 'https://mayday.land',
+      icon: 'i-fluent-emoji-flat:beach-with-umbrella',
+    }, {
       name: 'MayScreen',
       desc: 'Lyric teleprompter & remote control.',
       link: 'https://screen.mayday.blue',

@@ -19,9 +19,11 @@
     "vite-plugin-solid": "^2.4.0"
   },
   "dependencies": {
+    "@iconify-json/simple-icons": "^1.2.17",
     "@unocss/reset": "^0.47.5",
     "dayjs": "^1.11.7",
     "solid-js": "^1.6.3",
     "vite-plugin-ssr": "0.4.54"
-  }
+  },
+  "packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c"
 }

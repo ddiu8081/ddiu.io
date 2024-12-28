@@ -44,8 +44,8 @@ export default () => {
     }, {
       text: '',
       link: 'https://twitter.com/ddiu8081',
-      icon: 'i-fa-brands-twitter',
-      class: 'hover:bg-[#00ACEE]'
+      icon: 'i-simple-icons:x',
+      class: 'hover:bg-[#000000] dark:hover:bg-white dark:hover:text-gray-900'
     }, {
       text: '',
       link: 'https://mas.to/@ddiu8081',
@@ -63,14 +63,14 @@ export default () => {
       class: 'hover:bg-[#f7c104]'
     }, {
       text: '',
-      link: 'https://dribbble.com/ddiu8081',
-      icon: 'i-fa-brands-dribbble',
-      class: 'hover:bg-[#ea4c89] dark:hover:bg-[#ea4c89]'
-    }, {
-      text: '',
       link: 'https://space.bilibili.com/541993',
       icon: 'i-ri-bilibili-fill',
       class: 'hover:bg-[#fb7299]'
+    }, {
+      text: '',
+      link: 'https://space.bilibili.com/541993',
+      icon: 'i-simple-icons:xiaohongshu',
+      class: 'hover:bg-[#ff2442]'
     }
   ]
 
