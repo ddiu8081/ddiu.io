@@ -68,7 +68,7 @@ export default () => {
       class: 'hover:bg-[#fb7299]'
     }, {
       text: '',
-      link: 'https://space.bilibili.com/541993',
+      link: 'https://www.xiaohongshu.com/user/profile/5d7e751900000000010010bd',
       icon: 'i-simple-icons:xiaohongshu',
       class: 'hover:bg-[#ff2442]'
     }
